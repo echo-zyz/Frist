@@ -4,14 +4,13 @@
 	    <title>NBA全明星投票NBA全明星投票</title>
 		<meta charset="utf-8">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+		<style type="text/css">label{color:blue}</style><!--内部样式-->
+		<link type="text/css" rel="stylesheet" href="1.css">
 	</head>
 	<body>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://china.nba.com/" target=_blank><img src="vote.png"/> 
+	<a href="https://china.nba.com/" target=_blank><img class="top" src="vote.png"/> 
 	</a>
-	<h1>投票开始啦！<h1>
+	<h1 style="color:red">投票开始啦！<h1>  <!--css行内样式-->
 	<p>
 	    <h2>详情可以访问NBA官网
 		
@@ -23,15 +22,15 @@
 	<h6></h6>
 	<h3>请选择您的职业：</h3>
 	<form>
-	    <input type="radio" name="职业" value="学生"/><label>学生</label>
-		<input type="radio" name="职业" value="白领"/><label>白领</label>
+	    <input type="radio" name="职业" value="学生"/><label id="学生">学生</label>
+		<input type="radio" name="职业" value="白领"/><label class="白领">白领</label>
 		<input type="radio" name="职业" value="自由职业"/><label>自由职业</label>
 		<br/>
 		<label>请提交</label><input type="submit" name="职业提交">
 	</form>
 	<h3>请选择您的年龄：</h3>
 	<select>
-	    <option>小于18</option>
+	    <option >小于18</option>
 		<option>18-25</option>
 		<option>26-30</option>
 		<option>30+</option>
@@ -46,24 +45,35 @@
 	<br/>
 	<h3>请选择您最喜欢的球星</h3>
 	<form>
-	    <input type="checkbox" name="superstar" value="詹姆斯"/><label>詹姆斯</label><img src="zms.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="字母哥"/><label>字母哥</label><img src="zimuge.png" width=70 height=50/>
-	    <input type="checkbox" name="superstar" value="浓眉哥"/><label>浓眉哥</label><img src="浓眉.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="77"/><label>77</label><img src="dongqiqi.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="杨少侠"/><label>杨少侠</label><img src="yang.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="哈登"/><label>哈登</label><img src="hadeng.png" width=70 height=50/>
+	    <input type="checkbox"  name="superstar" value="詹姆斯"/><label id="詹姆斯">詹姆斯</label><img src="zms.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="字母哥"/><label>字母哥</label><img src="zimuge.png" width=70 height=50/>
+	    <input type="checkbox"  name="superstar" value="浓眉哥"/><label>浓眉哥</label><img src="浓眉.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="77"/><label>77</label><img src="dongqiqi.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="杨少侠"/><label>杨少侠</label><img src="yang.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="哈登"/><label>哈登</label><img src="hadeng.png" width=70 height=50/>
 		<br/>
-		<input type="checkbox" name="superstar" value="大帝"/><label>大帝</label><img src="enbide.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="保罗"/><label>保罗</label><img src="baoluo.png" width=70 height=50/>
-	    <input type="checkbox" name="superstar" value="罗斯"/><label>罗斯</label><img src="rose.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="火花"/><label>火花</label><img src="houhuade.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="乔治"/><label>乔治</label><img src="qiaozhi.png" width=70 height=50/>
-		<input type="checkbox" name="superstar" value="卡哇伊"/><label>卡哇伊</label><img src="kawyi.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="大帝"/><label>大帝</label><img src="enbide.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="保罗"/><label>保罗</label><img src="baoluo.png" width=70 height=50/>
+	    <input type="checkbox"  name="superstar" value="罗斯"/><label>罗斯</label><img src="rose.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="火花"/><label>火花</label><img src="houhuade.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="乔治"/><label>乔治</label><img src="qiaozhi.png" width=70 height=50/>
+		<input type="checkbox"  name="superstar" value="卡哇伊"/><label>卡哇伊</label><img src="kawyi.png" width=70 height=50/>
 		<br/>
 		<input type="submit" name="全明星喜欢球星多选提交">
 	</form>
 	<h3>球星数据</h3>
 	<iframe src=playerdata.html width=500 height=100/></iframe>
+	<br/>
+	<ol>
+		<li>雄鹿</li>
+		<li>热火</li>
+		<li>凯尔特人</li>
+		<li>猛龙</li>
+		<li>76人</li>
+		<li>步行者</li>
+		<li>魔术</li>
+		<li>篮网</li>
+	</ol>
 	<br/>
 	<div><img src="di.png"/></div>
 	</body>
